@@ -1,13 +1,15 @@
 class Money:
 
-    def stanart(self):
+    def standart(self):
         print("Я обычный метод")
 
+    @staticmethod
     def static():
         print("Я статический метод")
-    static = staticmethod(static)      #Не обязательно указывать что ето статикметод
+
 
 dollar = Money()
 
 Money.static()  #Вызов статического метода через имякласса.метод
-dollar.stanart() #Вызов обычного метода через обьект
+dollar.standart() #Вызов обычного метода класа через обьект
+Money().standart()  #Вызов обычного метода класа через Класс
