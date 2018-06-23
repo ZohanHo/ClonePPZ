@@ -1,30 +1,16 @@
-class People:
-    eyes = 2  #Переменная класа (Наз. ПОЛЕ КЛАССА) Статические переменные(Применяются как константы)
+class Bdo:
 
-    def set(self, work_hors = 8):
-        self.wh = work_hors
+jump = "up"
 
-    def __init__(self, name = "noname"):
-        self.nm = name
+    def run(self):
+        self.run = "Беги"  #Можно не передавать переменные, а указать их сразу
+        print(self.run)
 
-    def run(self):  #К переменным класа и методу класа, могу обращатся как через обьект так и через self !!!
-        print("{} бежит, смотриу {} глазами".format(self.nm, jenya.eyes))
-        print("{} бежит, смотриу {} глазами".format(jenya.nm, self.eyes))
-
-    def __str__(self):  #Возвращает строковое представление метода
-        return str(self.eyes)
-
-jenya = People("Женя") #Указал в конструкторе что по умолчанию name = noname, тут же указую что name = Женя
+zohan = Bdo()
+zohan.run()
 
 
-#jenya.name = "Женя Хо Хо" Могу переопредилить имя которое получил при инициализации, при необходимости
+nitrich = Bdo()
+nitrich.run()
 
-Zohan_name = jenya.nm #Присвоил переменной  имя обьекта jenya
-Zohan_eyes = jenya.eyes #Присвоил переменной  количество глаз через обьект jenya
-
-
-print("Меня зовут {}, глаз у меня {}".format(Zohan_name, Zohan_eyes))
-jenya.run()
-#jenya.set(10) #Устанавливает значение методу set в заданое число
-jenya.set() #Нужно вызвать метод для того что бы можно было получить доступ к его полям через обьект, в отличии от __init__
-print(jenya.wh) #Печатаю значение кторое передал методу
+Bdo().run() #Можно вызвать метод  не через обьект класса, а непосредственно через класс
