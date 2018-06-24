@@ -14,6 +14,6 @@ class Money:
 
 zohan = Money(100)
 
-zohan += 100
+zohan += 200
 print(zohan)
 zohan.push()
