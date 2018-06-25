@@ -7,7 +7,7 @@ class People:
     def __init__(self, name = "noname"):
         self.nm = name
 
-    def run(self):  #К переменным класа и методу класа, могу обращатся как через обьект так и через self !!!
+    def run(self):  #К переменным класа и методу класа, могу обращатся как через обьект так и через self !!!?
         print("{} бежит, смотриу {} глазами, потом работает по {} часов".format(self.nm, jenya.eyes, self.wh))
         print("{} бежит, смотриу {} глазами".format(jenya.nm, self.eyes))
 

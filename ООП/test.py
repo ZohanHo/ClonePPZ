@@ -1,17 +1,17 @@
-class Bdo:
-    def __init__(self, name):
-        self.name = name
-    jump = "up"
+class Fructs:
 
-    def run(self):
-        self.run = "Беги"  #Можно не передавать переменные, а указать их сразу
-        print(self.run, self.name)
+    #def __init__(self, weight):  #Cоздать через конструктор
+    #self.w = weight
 
-zohan = Bdo("Зохан")
-zohan.run()
+    def set(self, weight):  # Метод не вызван, его переменные не доступны классу
+        self.w = weight
 
-nitrich = Bdo("Нитрыч")
-nitrich.run()
+    def test(self, g):
+        self.g = g
+        print(self.g, self.w )
 
-#Bdo().run() #Можно вызвать метод  не через обьект класса, а непосредственно через класс, но пока не указан конструктор, потом не раб.
-#print(Bdo().jump)
+aplle = Fructs()
+aplle.test(10)  #
+
+
+
