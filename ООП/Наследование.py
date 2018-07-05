@@ -20,10 +20,9 @@ class Phone2(Phone):
         pass
 
     def set(self):
-        if True:
-            pass
-        else:
-            super(Phone2, self).set()  # В данном случае мы перегрузили метод, но хотим испотльзоать не перегруженый с класа родителя
+
+        super(Phone2, self).set()  # В данном случае мы перегрузили метод, но хотим испотльзоать не перегруженый с класа родителя
 
 obj = Phone2()
 print(obj.number)
+print(obj.set())

@@ -5,9 +5,9 @@
 def f1():
     print("что то")
 
-def decorator(f):   # Функция передается  аргументе
+def decorator(function):   # Функция передается в аргументе
     print("before")
-    f()  # Функция переданая  аргументе ызывается
+    function()  # Функция переданая в аргументе вызывается
     print("after")
 
 decorator(f1)
