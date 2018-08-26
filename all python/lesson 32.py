@@ -3,4 +3,4 @@
 z = [1, 2, 3, 4, 5, 10]
 
 result = list(filter(lambda x: x % 5 == 0, z)) # Получает така как и map 2 аргумента, фильтрует по условию
-print(result)
+print(result)  
