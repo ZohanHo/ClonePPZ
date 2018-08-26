@@ -7,7 +7,7 @@ class VectorClass:
 
     #def multiplay(self, v2): # В Функцию прийдет обьект класса как аргумент, но мы бужем использовать магичесуий метод
     def __mul__(self, other): # Принимаем какойто озер и используем инициализированые переменныее
-        return VectorClass(self.x * other.x, self.y * other.y) # Возвращаем
+        return VectorClass(self.x * other.x, self.y * other.y) # Возвращаем...
 
 v1 = VectorClass(2, 3)
 v2 = VectorClass(6 ,7)
