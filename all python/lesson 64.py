@@ -1,3 +1,4 @@
+""""""
 """Функции isinstance() и type()"""
 
 """isinstance()  проверят является ли обьект экземпляром какогото класса"""
@@ -35,8 +36,8 @@ class A (list):
     pass
 
 a = A()
-type(a) == list #False
-type(a) == A #True
+print(type(a) == list) #False
+print(type(a) == A) #True
 isinstance(a,A) #True
 isinstance(a,list) #True
 

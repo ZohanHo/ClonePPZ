@@ -15,9 +15,13 @@ while b > 0:
     print(b)
     b -= 1
     if b == 5:
-        #print("skip 5")
+        print("gg")
+            #print("skip 5")
         continue # Останавливает текущую итерацию и переходит к следующей
-    if b == 3:
-        print("stop 4")
-        break # Щстановка цыкла
 
+
+
+for i in 'hello world':
+    if i == 'o':
+        continue
+    print(i * 2, end='')

@@ -1,6 +1,7 @@
+""""""
 """Функциональное програмирование"""
 
-def apply(func, arg):
+def apply(func, arg):  # Функция которую мы передали говорит о том что мы в теле можем ней пользоватся
     return func(func(arg))
 def add(x):
     return (x + 5)
