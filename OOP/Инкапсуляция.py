@@ -4,12 +4,12 @@ class Divider:
         self.__div = 2
 
     def set_div(self, set_div):
-        if self.__set_num(set_div):
+        if self.__SetNum(set_div):
                 self.__div = set_div
         else:
             print("Error")
 
-    def __set_num(self, set_div):   # Метод возвращает True, такие методы нужны для внутренего использоваия в программе
+    def __SetNum(self, set_div):   # Метод возвращает True, такие методы нужны для внутренего использоваия в программе
             return not set_div == 0
 
 

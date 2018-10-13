@@ -13,6 +13,6 @@ class Car:
         print("Еду")
 
 if __name__ == "__main__":  # Указуем питону что хотим запустить код, если он выполняется как автономный фаил
-    print("god")
+    print("good")
     honda = Car()
     print(honda.run())

@@ -1,10 +1,11 @@
 """"""
-"""    Списки
+"""   
 Метод Join - иверсия методу split, превращает список в набор строк, в аргументе в скобках указать разделитель
 """
 
 a = ['red', 'green', 'blue']
 print(' '.join(a))  # вернёт red green blue, разделитель по пробелу
+print('\n'.join(['This', 'is', 'Sparta'])) # передал список
 print(''.join(a))   # вернёт redgreenblue. разделитель без пробела
 print('***'.join(a)) # вернёт red***green***blue
 print('\n'.join(a))

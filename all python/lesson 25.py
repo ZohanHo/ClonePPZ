@@ -1,6 +1,7 @@
+""""""
 """Функции обработки строк"""
 
-print(", ".join(["spam", "eggs", "ham"]))
+print(", ".join(["spam", "eggs", "ham"])) # разбивает список на слова
 #spam, eggs, ham
 
 print("Hello ME".replace("ME", "world")) # Замещает одну строку на другую

@@ -1,5 +1,11 @@
-try:   # В конструкции try мы уверены что фаил всегда закроется
-    f = open("file.txt")
-    print(f.read())
-finally:
-    f.close()
+""""""
+"""МОДУЛИ"""
+
+import sys
+
+
+print('Аргументы командной строки:')
+for i in sys.argv:
+    print(i)
+print('\n\nПеременная PYTHONPATH содержит', sys.path, '\n')
+

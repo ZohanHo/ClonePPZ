@@ -1,4 +1,4 @@
-#Есть два обьекта, апельсины и яблоки, необходимо сложить апельсины и яблоки по их весу
+ #Есть два обьекта, апельсины и яблоки, необходимо сложить апельсины и яблоки по их весу
 
 class Fructs:
 
@@ -14,7 +14,7 @@ class Fructs:
     def __mul__(self, other):   #Умножение аналогично сложению
         return Fructs(aplle.w * orange.w)
 
-    def __mod__(self, other):   #Умножение аналогично сложению
+    def __mod__(self, other):
         return Fructs(aplle.w % orange.w)
 
     def __len__(self):
