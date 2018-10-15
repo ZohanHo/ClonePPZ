@@ -9,3 +9,14 @@ def func():
 var = func()
 print(var)
 
+
+print("--------------")
+
+"""Во втором примере return есть. и None не возвращается"""
+
+def func():
+    print("hi")
+    return "hi"
+
+
+var = func()

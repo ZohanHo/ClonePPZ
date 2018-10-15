@@ -11,8 +11,9 @@
 
 dictionary = {"name":4, 4:"name", 5:6, 7:[1, 2, 3], 10:{"key":10, "man":20}}
 
-dictionary["rus"] = "Moskow" # Добавляем в словарь новые данные
+dictionary["rus" , "belorus"] = "Moskow", "Minsk" # Добавляем в словарь новые данные
 dictionary["ukr"] = "kiev"
+print(dictionary["ukr"])
 
 # Как можно создавать словари, для небольших словарей
 Capitals = {'Russia': 'Moscow', 'Ukraine': 'Kiev', 'USA': 'Washington'} # стандартный метод
@@ -48,7 +49,7 @@ if key in dictionary:  # Проверка
 try:
     del dictionary[key2]
 except KeyError:
-        print('There is no element with key "' + key2 + '" in dict')
+        print('There is no element with key "' + key + '" in dict')
 print(dictionary)
 
 # Удаление через функцию pop
@@ -75,23 +76,5 @@ print(dictionary.get(15)) # Возвращает None если ключ не н�
 print(dictionary.get(11, "does not exist"))
 
 
-ab = {
-        'Swaroop' : 'swaroop@swaroopch.com',
-        'Larry' : 'larry@wall.org',
-        'Matsumoto' : 'matz@ruby-lang.org',
-        'Spammer' : 'spammer@hotmail.com'
-}
-print("Адрес Swaroop'а:", ab['Swaroop'])
 
-# Удаление пары ключ-значение
-del ab['Spammer'] # Удаляется по ключу
-print('\nВ адресной книге {0} контактов\n'.format(len(ab)))
-
-for name, address in ab.items(): #можно перебрать в цыкле как ключи так и значения, items - содержит пару (ключ и значение)
-    print('Контакт {0} с адресом {1}'.format(name, address))
-
-# Добавление пары ключ-значение
-ab['Guido'] = 'guido@python.org'
-if 'Guido' in ab: # проверка на наличие
-    print("\nАдрес Guido:", ab['Guido'])
 

@@ -27,7 +27,7 @@ def decor(func): # функцию которую хотим декорирова
     return wrap
 
 @decor  # функция которую декорируем будет передана другой функции в аргумент, и использована в теле
-def print_text():
+def print_text1():
     print("hello world")
 
-print_text()
+print_text1()

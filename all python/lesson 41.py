@@ -1,4 +1,4 @@
-class SpecialString:  # не понятно откуда берется other.cont
+class SpecialString:  #  other.cont  в данном случаее обьект hell
     def __init__(self, cont):
         self.cont = cont
 

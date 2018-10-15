@@ -6,7 +6,7 @@
 Иногда бывает нужно определить функцию, способную принимать любое число параметров.
 Этого можно достичь при помощи звёздочек
 """
-def total(initial, *numbers, **keywords):
+def total(initial, *numbers, **keywords): # 
     count = initial
     for number in numbers:
         count += number  # Так как ето кортеж, то при помощи цыкла добавляем 10, 1, 2, 3
