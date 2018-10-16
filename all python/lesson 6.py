@@ -42,6 +42,14 @@ for word in str.split(" "): # Можно вызывать прямо в цыкл
 
 
 print(str1.split(sep=", lol ,", maxsplit=2)) #в sep= указывается разделитель, в maxsplit количество разбиений
+# ['I', 'love', 'you, lol ,mery, lol ,jane']
+
 
 for word in str1.split(sep=", lol ,"):
     print(word)
+
+# I
+# love
+# you
+# mery
+# jane

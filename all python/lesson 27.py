@@ -17,8 +17,9 @@ if any([i % 2 == 0 for i in nums]):
     print("At least one is even")
 
 
-for v in enumerate(nums): # Когда необходимо прономеровать список
+for v in enumerate(nums): # Когда необходимо прономеровать список, получим перечень кортежей
     print(v)
+    print(type(v))
 
 
 # Сделали проверку

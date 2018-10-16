@@ -12,15 +12,6 @@
 # short_story()
 
 
-def say(y):
-    if y == 2:
-        return y
-    else:
-        return y * say(y - 4)
-
-print(say(10))
-
-
 """Факториал числа"""  # Поставить метку ctrl+f11, снять shift+f11
 """
 Главное в рекурсии понять что когда код доходит до места где вызывается функция в теле,
@@ -34,13 +25,14 @@ def func(x):
         return x * func(x - 1) # 5 * 4 * 3 * 2
 print(func(6))
 
-# Пример не до конца понятен
+# Вводим числа по одному пока не введем 0, 
 def revers():
     n = int(input("введите число: "))
     if n != 0:
         revers()
         print(n)
 
+revers()
 
 def test(x,y):
     if y == 0:

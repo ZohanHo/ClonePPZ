@@ -10,12 +10,17 @@ def decor(a, b):   # не разобрался
     def sq(func):
         return func(a, b) * func(a, b)
     return sq
+
 def subs(a, b):
     return (a-b)
+
 def add(a, b):
-    return (a+b)
+    return (a + b)
+
+
 f = decor(2, 3)
 print(f(add) + f(subs))
+
 
 #пример 3
 a = [1, 2]

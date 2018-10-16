@@ -21,4 +21,4 @@ print(s)
 
 delimiter = '_*_'
 mylist = ['Бразилия', 'Россия', 'Индия', 'Китай']
-print(delimiter.join(mylist))
+print(delimiter.join(mylist))   # поместили разделитель в переменную

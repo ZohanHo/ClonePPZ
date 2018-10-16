@@ -19,5 +19,8 @@ if 'a' in name: # проверка на вхождение
 if name.find('war') != -1:  # Поиск подстроки в строке. Возвращает номер первого вхождения или -1
     print('Да, она содержит строку "war"')
 delimiter = '_*_'
+
 mylist = ['Бразилия', 'Россия', 'Индия', 'Китай']
-print(delimiter.join(mylist))
+print(type(mylist))
+stroka = delimiter.join(mylist)  # Бразилия_*_Россия_*_Индия_*_Китай
+print(type(stroka))

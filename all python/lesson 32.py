@@ -8,11 +8,11 @@ print(result)
 
 
 
-# проверили ключь делится ли на 2
+# проверили ключ делится ли на 2
 result2 = {4 : 6, 2 : 3}
 
 def func(x):
-    if x != str:
+    if x != str or None:
         return x % 2 == 0
 
 print(tuple(filter(func, result2)))
